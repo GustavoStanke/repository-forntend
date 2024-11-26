@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Simples</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container my-4">
+    <!-- Campo de pesquisa -->
+    <div class="row">
+      <div class="col-12">
+        <input type="text" id="search" class="form-control" placeholder="Pesquisar produtos..." disabled>
+      </div>
+    </div>
+
+    <!-- Seção de Produtos -->
+    <div class="row my-4" id="product-list">
+      <!-- Os produtos serão renderizados aqui -->
+    </div>
+
+    <!-- Contador de Produtos -->
+    <div class="row">
+      <div class="col-12 text-center">
+        <p id="product-count">Total de produtos: 0</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
