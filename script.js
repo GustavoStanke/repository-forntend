@@ -2,6 +2,7 @@
 const productList = document.getElementById("product-list");
 const productCount = document.getElementById("product-count");
 const searchInput = document.getElementById("search");
+const sortOptions = document.getElementById("sortOptions");
 
 // Função para carregar os produtos com base na pesquisa e ordenação
 async function loadProducts(order = "nome", filter = "") {
@@ -55,8 +56,13 @@ window.onload = function() {
   loadProducts();  // Carregar os produtos sem filtro inicial
 };
 
+
 // Adicionando um evento de escuta para o campo de pesquisa
 searchInput.addEventListener("input", function() {
   const filterValue = searchInput.value.trim();
   loadProducts("nome", filterValue);  // Recarrega os produtos com o filtro atualizado
+});
+sortOptions.addEventListener("change", (event) => {
+  const selectedOrder = event.target.value;
+  loadProducts(selectedOrder); // Carregar produtos com a ordenação selecionada
 });
