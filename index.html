@@ -9,10 +9,21 @@
 </head>
 <body>
   <div class="container my-4">
-    <!-- Campo de pesquisa -->
-    <div class="row">
-      <div class="col-12">
-        <input type="text" id="search" class="form-control" placeholder="Pesquisar produtos..." disabled>
+    <h1 class="text-center">Loja Virtual</h1>
+
+    <div class="row my-3">
+      <!-- Campo de pesquisa -->
+      <div class="col-md-8">
+        <input type="text" id="search" class="form-control" placeholder="Pesquisar produtos...">
+      </div>
+    
+      <!-- Seletor de Ordenação -->
+      <div class="col-md-4">
+        <select id="sortOptions" class="form-select">
+          <option value="nome">Ordem Alfa</option>
+          <option value="valor_mais_alto">Valor mais alto</option>
+          <option value="valor_mais_baixo">Valor mais baixo</option>
+        </select>
       </div>
     </div>
 
